@@ -1,0 +1,59 @@
+html {
+    height: 100vh;
+}
+* {
+    margin: 0;
+    padding: 0;
+    color: white;
+    box-sizing: border-box;
+}
+.page-container {
+    grid-template-columns: 40vw 1fr;
+    display: grid;
+    position: relative;
+}
+img#background {
+    height: 100vh;
+    width: 40vw;
+    position: absolute;
+    z-index: 1;
+}
+body {
+    background: linear-gradient(#07080d, #080a12,#111925,#28303b,#3e454f);
+} 
+.image-side {
+    width: 100%;
+    grid-area: 1 / 1
+}
+img#logo {
+    height: 80px;
+}
+#header {
+    font-family: "Barca", sans-serif;
+    font-size: 80px;
+}
+.container-logo {
+    text-align: center;
+    position: relative;
+    top: 30vh;
+    z-index: 2;
+    justify-content: center;
+    column-gap: 10px;
+    background: rgba(58, 58, 58, 0.3);
+    padding: 1rem;
+}
+.form-side,
+.container-logo {
+    display: flex;
+    align-items: center;
+}
+.form-side {
+    grid-area: 1 / 2;
+    justify-content: space-around;
+    flex-direction: column;
+    height: 100vh;
+}
+@font-face {
+    font-family: "Barca";
+    src: url(./resources/barcelona-font/BarcelonaRegular-nRZgY.ttf);
+}
